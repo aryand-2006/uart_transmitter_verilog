@@ -69,6 +69,7 @@ Parameters: `CLK_FREQ`, `BAUD_RATE`
 Requires [Icarus Verilog](https://bleyer.org/icarus/) and [GTKWave](https://gtkwave.sourceforge.net/) (bundled with the Icarus Windows installer).
 
 ```
+cd src
 iverilog -o uart_tx_tb.vvp baud_gen.v uart_tx.v uart_tx_tb.v
 vvp uart_tx_tb.vvp
 gtkwave uart_tx_tb.vcd
